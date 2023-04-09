@@ -1,0 +1,39 @@
+1. Maven es lo que se denomina un 'Project Management Framework' es una herramienta de gestión de software que proporciona un modelo
+estandardarizado de gestión de proyectos y descripción de proyectos. Maven proporciona herramientas para la compilación, distribución,
+despliegue y documentación para proyectos en Java.
+
+2. El repositorio central de Maven es un repositorio de software que almacena y distribuye bibliotecas y frameworks de 
+software que se utilizan comúnmente en proyectos Java. Es el repositorio de Maven más grande y está alojado por la organización 
+sin fines de lucro Apache Software Foundation.
+El repositorio central de Maven es el repositorio por defecto que se 
+utiliza cuando se descargan dependencias de proyectos Maven. Contiene miles de bibliotecas de software de código abierto 
+que pueden ser descargadas automáticamente por Maven para su uso en proyectos Java.
+El repositorio central de Maven se compone de dos secciones principales: las bibliotecas "release" y "snapshot". La sección 
+"release" contiene versiones estables de las bibliotecas y frameworks, mientras que la sección "snapshot" 
+contiene versiones de desarrollo más recientes.
+
+Los desarrolladores pueden contribuir a la comunidad de Maven mediante la carga de sus bibliotecas y frameworks 
+en el repositorio central. Para que una biblioteca sea aceptada en el repositorio central, debe cumplir con ciertos 
+requisitos, como tener una licencia de código abierto y cumplir con las políticas de Maven.
+En resumen, el repositorio central de Maven es un recurso importante para los desarrolladores Java, ya 
+que proporciona un acceso fácil y eficiente a una amplia gama de bibliotecas y frameworks de 
+software de código abierto.
+
+3. El repositorio local de Maven es un repositorio de software local que se utiliza para almacenar todas las 
+dependencias de un proyecto Maven en la máquina del desarrollador. Cuando se ejecuta un proyecto Maven, 
+las dependencias necesarias se descargan automáticamente desde los repositorios remotos y se almacenan en el 
+repositorio local.
+El repositorio local de Maven es específico del usuario y se encuentra en la carpeta de inicio del usuario. 
+Por defecto, se encuentra en el directorio ".m2" en el directorio de inicio del usuario en sistemas operativos basados 
+en Unix (Linux, macOS, etc.) y en el directorio "C:\Users<username>.m2" en Windows.
+La ventaja de tener un repositorio local es que se evita tener que descargar las mismas dependencias una y otra vez cada vez 
+que se construye un proyecto. En su lugar, las dependencias se almacenan en el repositorio local para su uso posterior, lo que 
+acelera el proceso de construcción y ahorra ancho de banda de red.
+
+El repositorio local también permite a los desarrolladores trabajar en proyectos sin conexión a internet, ya que todas las 
+dependencias necesarias ya se encuentran en su máquina. Además, también permite a los desarrolladores personalizar las 
+dependencias de un proyecto sin afectar a otros proyectos en la misma máquina.
+
+En resumen, el repositorio local de Maven es un repositorio de software local que almacena todas las dependencias 
+necesarias para construir un proyecto Maven en la máquina del desarrollador. Es una parte importante del proceso de construcción 
+de proyectos Maven y ayuda a acelerar el proceso de construcción al evitar tener que descargar las mismas dependencias repetidamente.

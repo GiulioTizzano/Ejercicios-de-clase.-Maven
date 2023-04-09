@@ -1,0 +1,81 @@
+1. Maven es lo que se denomina un 'Project Management Framework' es una herramienta de gestión de software que proporciona un modelo
+estandardarizado de gestión de proyectos y descripción de proyectos. Maven proporciona herramientas para la compilación, distribución,
+despliegue y documentación para proyectos en Java.
+
+2. El repositorio central de Maven es un repositorio de software que almacena y distribuye bibliotecas y frameworks de 
+software que se utilizan comúnmente en proyectos Java. Es el repositorio de Maven más grande y está alojado por la organización 
+sin fines de lucro Apache Software Foundation.
+El repositorio central de Maven es el repositorio por defecto que se 
+utiliza cuando se descargan dependencias de proyectos Maven. Contiene miles de bibliotecas de software de código abierto 
+que pueden ser descargadas automáticamente por Maven para su uso en proyectos Java.
+El repositorio central de Maven se compone de dos secciones principales: las bibliotecas "release" y "snapshot". La sección 
+"release" contiene versiones estables de las bibliotecas y frameworks, mientras que la sección "snapshot" 
+contiene versiones de desarrollo más recientes.
+
+Los desarrolladores pueden contribuir a la comunidad de Maven mediante la carga de sus bibliotecas y frameworks 
+en el repositorio central. Para que una biblioteca sea aceptada en el repositorio central, debe cumplir con ciertos 
+requisitos, como tener una licencia de código abierto y cumplir con las políticas de Maven.
+En resumen, el repositorio central de Maven es un recurso importante para los desarrolladores Java, ya 
+que proporciona un acceso fácil y eficiente a una amplia gama de bibliotecas y frameworks de 
+software de código abierto.
+
+3. El repositorio local de Maven es un repositorio de software local que se utiliza para almacenar todas las 
+dependencias de un proyecto Maven en la máquina del desarrollador. Cuando se ejecuta un proyecto Maven, 
+las dependencias necesarias se descargan automáticamente desde los repositorios remotos y se almacenan en el 
+repositorio local.
+El repositorio local de Maven es específico del usuario y se encuentra en la carpeta de inicio del usuario. 
+Por defecto, se encuentra en el directorio ".m2" en el directorio de inicio del usuario en sistemas operativos basados 
+en Unix (Linux, macOS, etc.) y en el directorio "C:\Users<username>.m2" en Windows.
+La ventaja de tener un repositorio local es que se evita tener que descargar las mismas dependencias una y otra vez cada vez 
+que se construye un proyecto. En su lugar, las dependencias se almacenan en el repositorio local para su uso posterior, lo que 
+acelera el proceso de construcción y ahorra ancho de banda de red.
+
+El repositorio local también permite a los desarrolladores trabajar en proyectos sin conexión a internet, ya que todas las 
+dependencias necesarias ya se encuentran en su máquina. Además, también permite a los desarrolladores personalizar las 
+dependencias de un proyecto sin afectar a otros proyectos en la misma máquina.
+
+En resumen, el repositorio local de Maven es un repositorio de software local que almacena todas las dependencias 
+necesarias para construir un proyecto Maven en la máquina del desarrollador. Es una parte importante del proceso de construcción 
+de proyectos Maven y ayuda a acelerar el proceso de construcción al evitar tener que descargar las mismas dependencias repetidamente.
+
+Un arquetipo en Maven es una plantilla o modelo predefinido que se utiliza para generar un proyecto Maven inicial. 
+Un arquetipo define la estructura del proyecto, los archivos de configuración y las dependencias necesarias para que el proyecto 
+funcione correctamente.
+En otras palabras, un arquetipo es un proyecto Maven preconfigurado que puede ser utilizado como base para crear 
+proyectos similares. Cuando se crea un nuevo proyecto Maven utilizando un arquetipo, Maven genera automáticamente la 
+estructura de directorios y los archivos de configuración necesarios para el proyecto, así como las dependencias especificadas 
+en el arquetipo.
+
+El archivo pom.xml es un archivo de configuración de Maven que se encuentra en el directorio raíz de un proyecto Maven. 
+El archivo POM (Project Object Model) define todas las configuraciones necesarias para construir y empaquetar un proyecto, 
+incluyendo las dependencias, los plugins, las propiedades y otra información relacionada con el proyecto.
+
+El archivo pom.xml contiene información como el nombre y la descripción del proyecto, la versión del proyecto, los desarrolladores 
+y los mantenedores del proyecto, las dependencias del proyecto, los plugins necesarios para construir el proyecto, los repositorios 
+remotos utilizados para descargar las dependencias y los plugins, entre otros detalles.
+
+Fase "validate": Esta fase valida que el proyecto es correcto y todas las configuraciones son válidas. Durante esta fase, 
+Maven realiza algunas comprobaciones iniciales, como verificar la existencia del archivo pom.xml, comprobar la configuración 
+de las propiedades, la configuración de las dependencias, entre otros.
+Fase "compile": Durante esta fase, Maven compila el código fuente del proyecto y genera los archivos .class. 
+Esta fase también copia los recursos necesarios al directorio de salida. Si hay errores de compilación, Maven detiene la compilación 
+y muestra los errores en la salida de la línea de comandos.
+Fase "test": Durante esta fase, Maven ejecuta las pruebas unitarias del proyecto. Esta fase utiliza la herramienta de pruebas 
+JUnit para ejecutar las pruebas unitarias del proyecto. Si hay errores en las pruebas, Maven detiene la compilación y muestra 
+los errores en la salida de la línea de comandos.
+Fase "package": Durante esta fase, Maven empaqueta el proyecto en un formato específico, como un archivo .jar o 
+un archivo .war, según la configuración del proyecto. Esta fase también copia los archivos empaquetados en el directorio de salida.
+
+Fase "install": Durante esta fase, Maven instala el paquete generado en el repositorio local, para que pueda ser utilizado 
+como una dependencia en otros proyectos Maven. La fase "install" ejecuta todas las fases anteriores, incluyendo la fase "package".
+
+Fase "deploy": Durante esta fase, Maven envía el paquete generado al repositorio remoto, para que pueda ser utilizado como una 
+dependencia en otros proyectos Maven. Esta fase ejecuta todas las fases anteriores, incluyendo la fase "package".
+
+Fase "clean": Durante esta fase, Maven borra todos los archivos generados en las fases anteriores. Esta fase elimina los archivos 
+generados en las fases "compile", "test" y "package", así como los archivos generados por otras herramientas. 
+Es útil cuando deseas limpiar tu proyecto antes de una nueva compilación.
+
+Fase "site": Durante esta fase, Maven genera un sitio web estático que documenta el proyecto. El sitio generado contiene 
+información sobre el proyecto, como el informe de pruebas, el informe de cobertura de código, la documentación del proyecto, entre 
+otros.
